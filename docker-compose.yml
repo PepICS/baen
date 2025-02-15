@@ -1,0 +1,32 @@
+services:
+  rstudio:
+    build: ./rstudio
+    container_name: rstudio_server
+    restart: unless-stopped
+    ports:
+      - "8788:8787"
+    environment:
+      - PASSWORD=yourpassword
+    volumes:
+      - ./rstudio/data:/home/rstudio  # 📌 Carpeta dins rstudio/
+    networks:
+      - analysis_net
+
+  jupyter:
+    build: ./jupyter
+    container_name: jupyter_lab
+    restart: unless-stopped
+    ports:
+      - "8890:8888"
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - JUPYTER_TOKEN=yourpassword
+    volumes:
+      - ./jupyter/data:/home/jovyan/work  # 📌 Carpeta dins jupyter/
+    networks:
+      - analysis_net
+
+networks:
+  analysis_net:
+
+

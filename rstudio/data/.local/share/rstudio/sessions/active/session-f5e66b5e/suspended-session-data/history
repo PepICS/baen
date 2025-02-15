@@ -1,0 +1,12 @@
+if (!requireNamespace("GEOquery", quietly = TRUE)) {
+print("GEOquery NO està instal·lat")
+} else {
+print("GEOquery està instal·lat")
+}
+if (!requireNamespace("GEOquery", quietly = TRUE)) {
++     print("GEOquery NO està instal·lat")
++ } else {
+require("GEOquery")
+if (!require("BiocManager", quietly = TRUE))
+install.packages("BiocManager")
+BiocManager::install("GEOquery")

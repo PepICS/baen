@@ -1,0 +1,13 @@
+1739616956355:if (!requireNamespace("GEOquery", quietly = TRUE)) {
+1739616956355:print("GEOquery NO està instal·lat")
+1739616956355:} else {
+1739616956355:print("GEOquery està instal·lat")
+1739616956355:}
+1739617357342:if (!requireNamespace("GEOquery", quietly = TRUE)) {
+1739617357343:+     print("GEOquery NO està instal·lat")
+1739617357343:+ } else {
+1739617378787:require("GEOquery")
+1739617448279:if (!require("BiocManager", quietly = TRUE))
+1739617448279:install.packages("BiocManager")
+1739617448473:BiocManager::install("GEOquery")
+1739619103199:require(GEOquery)
