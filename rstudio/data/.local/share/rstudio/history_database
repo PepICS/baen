@@ -11,3 +11,33 @@
 1739617448279:install.packages("BiocManager")
 1739617448473:BiocManager::install("GEOquery")
 1739619103199:require(GEOquery)
+1739622665734:library(bsseq)
+1739622673152:# Càrrega dels paquets
+1739622673152:library(GEOquery)
+1739622673153:library(limma)
+1739622673174:library(edgeR)
+1739622673317:library(bsseq)
+1739622773770:# Càrrega dels paquets
+1739622773770:library(GEOquery)
+1739622777135:library(limma)
+1739622779689:library(edgeR)
+1739622782075:library(bsseq)
+1739978062924:# Càrrega dels paquets
+1739978062925:library(GEOquery)
+1739978065641:library(limma)
+1739978067894:library(edgeR)
+1739978070611:library(bsseq)
+1739978152421:# Crear un objecte BSseq buit de prova
+1739978152421:test_bsseq <- BSseq(M = matrix(0, nrow=5, ncol=3),
+1739978152421:Cov = matrix(1, nrow=5, ncol=3),
+1739978152421:sampleNames = c("Sample1", "Sample2", "Sample3"))
+1739978218806:# Crear un objecte BSseq correcte amb informació genòmica fictícia
+1739978218806:test_bsseq <- BSseq(
+1739978218806:M = matrix(0, nrow=5, ncol=3),
+1739978218807:Cov = matrix(1, nrow=5, ncol=3),
+1739978218807:pos = c(100, 200, 300, 400, 500),  # Posicions genòmiques fictícies
+1739978218808:chr = c("chr1", "chr1", "chr2", "chr2", "chr3"),  # Cromosomes ficticis
+1739978218808:sampleNames = c("Sample1", "Sample2", "Sample3")
+1739978218808:)
+1739978218865:# Comprovar que s'ha creat correctament
+1739978218866:print(test_bsseq)

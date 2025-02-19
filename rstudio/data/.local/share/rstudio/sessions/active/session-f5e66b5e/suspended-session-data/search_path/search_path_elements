@@ -1,4 +1,9 @@
 .GlobalEnv
+package:edgeR
+package:limma
+package:GEOquery
+package:Biobase
+package:BiocGenerics
 package:BiocManager
 tools:rstudio
 package:stats
