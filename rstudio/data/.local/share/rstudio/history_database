@@ -41,3 +41,32 @@
 1739978218808:)
 1739978218865:# Comprovar que s'ha creat correctament
 1739978218866:print(test_bsseq)
+1740061460487:# Podem guardar l'algoritme dins una funció i simplement executar-la sense haber de seleccionar tot l'script
+1740061460487:funcio_birra <- function(Prou_Diners,Pressa_x_Marxar,Em_Conviden,Pibon_Insisteix){
+1740061460487:if(Prou_Diners=='Si'){
+1740061460488:if(Pressa_x_Marxar=='No'){
+1740061460488:print('Una altre birra!')
+1740061460488:} else{
+1740061460488:if(Pibon_Insisteix=='Si'){
+1740061460488:print('Una altre birra!')
+1740061460488:} else{
+1740061460488:print('Em quedo amb les ganes...')
+1740061460488:}
+1740061460488:}
+1740061460488:} else{
+1740061460488:if(Em_Conviden=='Si'){
+1740061460488:if(Pressa_x_Marxar=='No'){
+1740061460488:print('Una altre birra!')
+1740061460488:} else{
+1740061460488:if(Pibon_Insisteix=='Si'){
+1740061460489:print('Una altre birra!')
+1740061460489:} else{
+1740061460489:print('Em quedo amb les ganes...')
+1740061460489:}
+1740061460489:}
+1740061460489:} else{
+1740061460489:print('Em quedo amb les ganes...')
+1740061460489:}
+1740061460489:}
+1740061460489:}
+1740061460489:funcio_birra(Prou_Diners='Si',Pressa_x_Marxar='Si',Em_Conviden='Si',Pibon_Insisteix='Si')

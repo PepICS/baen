@@ -1,4 +1,13 @@
 .GlobalEnv
+package:bsseq
+package:SummarizedExperiment
+package:MatrixGenerics
+package:matrixStats
+package:GenomicRanges
+package:GenomeInfoDb
+package:IRanges
+package:S4Vectors
+package:stats4
 package:edgeR
 package:limma
 package:GEOquery
